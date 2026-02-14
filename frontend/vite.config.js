@@ -8,7 +8,7 @@ import fs from "fs"
 
 export default defineConfig({
 	server: {
-		port: 88003,
+		port: 58003,
 		proxy: getProxyOptions(),
 		allowedHosts: true,
 	},
@@ -91,9 +91,9 @@ export default defineConfig({
 
 function getProxyOptions() {
 	const config = getCommonSiteConfig()
-	const webserver_port = config ? config.webserver_port : 88001
+	const webserver_port = config ? config.webserver_port : 58001
 	if (!config) {
-		console.log("No common_site_config.json found, using default port 88001")
+		console.log("No common_site_config.json found, using default port 58001")
 	}
 	return {
 		"^/(app|login|api|assets|files|private)": {

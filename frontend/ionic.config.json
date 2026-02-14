@@ -3,6 +3,6 @@
 	"integrations": {},
 	"type": "vue",
 	"server": {
-		"url": "http://localhost:88003/"
+		"url": "http://localhost:58003/"
 	}
 }
